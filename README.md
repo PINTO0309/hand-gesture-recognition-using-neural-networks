@@ -1,5 +1,11 @@
 ## **This Fork (branch: `test`) is just to add a minor modification to make a 6 year old environment work on a recent new version of the framework.**
 
+1. CUDA 11.8
+2. tensorflow==2.14.0 https://www.tensorflow.org/install/source?hl=ja#gpu
+3. keras==2.15.0
+4. opencv-python==4.9.0.80
+5. VSCode==1.87.0
+
 ---
 ---
 ---

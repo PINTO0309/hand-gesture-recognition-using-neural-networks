@@ -2,3 +2,4 @@ data/
 data_design/
 *.h5
 *.tar.gz
+model_*/
