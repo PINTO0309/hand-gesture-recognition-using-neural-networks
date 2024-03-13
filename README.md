@@ -24,7 +24,7 @@ Each video is a sequence of 30 frames (or images)
 
 The training data consists of a few hundred videos categorised into one of the five classes. Each video (typically 2-3 seconds long) is divided into a sequence of 30 frames(images). These videos have been recorded by various people performing one of the five gestures in front of a webcam - similar to what the smart TV will use.
 
-The data is in a [archive.zip](https://www.kaggle.com/datasets/gmanish/tv-controls-gesture-recognition?resource=download) file. The zip file contains a 'train' and a 'val' folder with two CSV files for the two folders.
+The data is in a [data.tar.gz](https://github.com/PINTO0309/hand-gesture-recognition-using-neural-networks/releases/tag/dataset_and_h5) file. The tar.gz file contains a 'train' and a 'val' folder with two CSV files for the two folders.
 
 ![dataset](images/dataset1.png)
 
