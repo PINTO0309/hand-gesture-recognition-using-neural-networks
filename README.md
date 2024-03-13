@@ -4,12 +4,16 @@
 2. tensorflow==2.14.0 https://www.tensorflow.org/install/source?hl=ja#gpu
 3. keras==2.14.0
 4. opencv-python==4.9.0.80
-5. tf2onnx=1.16.1
-6. onnxsim==0.4.33
-7. sbi4onnx==1.0.5
-8. sor4onnx==1.0.5
-9. sne4onnx==1.0.11
-10. VSCode==1.87.0
+5. onnx==1.15.0
+6. onnxruntime==1.16.1
+7. tf2onnx=1.16.1
+8. onnxsim==0.4.33
+9. sbi4onnx==1.0.5
+10. sor4onnx==1.0.5
+11. sne4onnx==1.0.11
+12. VSCode==1.87.0
+
+![image](https://github.com/PINTO0309/hand-gesture-recognition-using-neural-networks/assets/33194443/91a0f239-036a-4205-9c4b-ca7398655a35)
 
 ---
 ---
