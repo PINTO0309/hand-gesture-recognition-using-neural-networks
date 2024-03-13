@@ -15,7 +15,7 @@ The gestures are continuously monitored by the webcam mounted on the TV. Each ge
 - Thumbs up:  Increase the volume
 - Thumbs down: Decrease the volume
 - Left swipe: 'Jump' backwards 10 seconds
-- Right swipe: 'Jump' forward 10 seconds  
+- Right swipe: 'Jump' forward 10 seconds
 - Stop: Pause the movie
 
 Each video is a sequence of 30 frames (or images)
@@ -24,7 +24,7 @@ Each video is a sequence of 30 frames (or images)
 
 The training data consists of a few hundred videos categorised into one of the five classes. Each video (typically 2-3 seconds long) is divided into a sequence of 30 frames(images). These videos have been recorded by various people performing one of the five gestures in front of a webcam - similar to what the smart TV will use.
 
-The data is in a [zip](https://www.dropbox.com/s/72jzl3fqvk1rk2w/gesture_data.zip?dl=0) file. The zip file contains a 'train' and a 'val' folder with two CSV files for the two folders.
+The data is in a [archive.zip](https://www.kaggle.com/datasets/gmanish/tv-controls-gesture-recognition?resource=download) file. The zip file contains a 'train' and a 'val' folder with two CSV files for the two folders.
 
 ![dataset](images/dataset1.png)
 
@@ -32,10 +32,10 @@ These folders are in turn divided into subfolders where each subfolder represent
 
 ![dataset](images/dataset2.png)
 
-Each subfolder, i.e. a video, contains 30 frames (or images). 
+Each subfolder, i.e. a video, contains 30 frames (or images).
 
 - Thumbs Up
-  
+
 ![dataset](images/gesture_thumbs_up.png)
 
 - Right Swipe
@@ -46,14 +46,14 @@ Note that all images in a particular video subfolder have the same dimensions bu
 
 ## Two Architectures: 3D Convs and CNN-RNN Stack
 
-After understanding and acquiring the dataset, the next step is to try out different architectures to solve this problem. 
+After understanding and acquiring the dataset, the next step is to try out different architectures to solve this problem.
 
-For analysing videos using neural networks, two types of architectures are used commonly. 
+For analysing videos using neural networks, two types of architectures are used commonly.
 
-One is the standard **CNN + RNN** architecture in which you pass the images of a video through a CNN which extracts a feature vector for each image, and then pass the sequence of these feature vectors through an RNN. 
+One is the standard **CNN + RNN** architecture in which you pass the images of a video through a CNN which extracts a feature vector for each image, and then pass the sequence of these feature vectors through an RNN.
 
 *Note:*
- - You can use transfer learning in the 2D CNN layer rather than training your own CNN 
+ - You can use transfer learning in the 2D CNN layer rather than training your own CNN
  - GRU (Gated Recurrent Unit) or LSTM (Long Short Term Memory) can be used for the RNN
 
 The other popular architecture used to process videos is a natural extension of CNNs - a **3D convolutional network**. In this project, we will try both these architectures.
@@ -87,7 +87,7 @@ https://en.wikipedia.org/wiki/Sobel_operator
 #### Laplacian Edge Detection
 Unlike the Sobel edge detector, the Laplacian edge detector uses only one kernel. It calculates second order derivatives in a single pass.
 
-We will perform edge detection on each channel and use the comibined 3 channel as input 
+We will perform edge detection on each channel and use the comibined 3 channel as input
 
 Edge detection Red channel
 ![edge detection](./images/edge_detect_r.png)
@@ -98,7 +98,7 @@ Edge detection Green channel
 Edge detection Blue channel
 ![edge detection](./images/edge_detect_b.png)
 
-Edge detection 
+Edge detection
 ![edge detection](./images/edge_detect_all.png)
 
 ### Normalization
@@ -147,9 +147,9 @@ This technique of image augmentation adds more generalization to the dataset.
 
 ## Generators
 
-**Understanding Generators**: As you already know, in most deep learning projects you need to feed data to the model in batches. This is done using the concept of generators. 
+**Understanding Generators**: As you already know, in most deep learning projects you need to feed data to the model in batches. This is done using the concept of generators.
 
-Creating data generators is probably the most important part of building a training pipeline. Although libraries such as Keras provide builtin generator functionalities, they are often restricted in scope and you have to write your own generators from scratch. In this project we will implement our own cutom generator, our generator will feed batches of videos, not images. 
+Creating data generators is probably the most important part of building a training pipeline. Although libraries such as Keras provide builtin generator functionalities, they are often restricted in scope and you have to write your own generators from scratch. In this project we will implement our own cutom generator, our generator will feed batches of videos, not images.
 
 Let's take an example, assume we have 23 samples and we pick batch size as 10.
 
@@ -158,7 +158,7 @@ In this case there will be 2 complete batches of ten each
 - Batch 2: 10
 - Batch 3: 3
 
-The final run will be for the remaining batch that was not part of the the full batch. 
+The final run will be for the remaining batch that was not part of the the full batch.
 
 Full batches are covered as part of the for loop the remainder are covered post the for loop.
 
@@ -171,7 +171,7 @@ Note that in our project, each gesture is a broken into indivdual frame. Each ge
 The order of the images loaded might be random and so it is necessary to apply sort on the list of files before reading each frame.
 
 
-# Implementation 
+# Implementation
 
 ## 3D Convolutional Network, or Conv3D
 
@@ -426,7 +426,7 @@ Model Summary
 
 ![Model 5 summary](./images/Model5.png)
 
-Model 5 gave us **test accuracy of 87% and validation accuracy of 87%** using all the 30 frames. The same model is submitted for the review. 
+Model 5 gave us **test accuracy of 87% and validation accuracy of 87%** using all the 30 frames. The same model is submitted for the review.
 While we did try model lesser frames by using even frames but we felt more comfortable using full frame. Cropping and other preprocessing also did not affect much on the final accuracy.
 
 Link to modle ->  https://drive.google.com/open?id=12wMsLnLGYWCK9B9AKIfoGjxx5pZkRr3h
