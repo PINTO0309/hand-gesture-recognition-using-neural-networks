@@ -1,3 +1,9 @@
+## **This Fork (branch: `test`) is just to add a minor modification to make a 6 year old environment work on a recent new version of the framework.**
+
+---
+---
+---
+
 # Hand gesture recognition using neural networks
 
 ## Developers
