@@ -4,7 +4,12 @@
 2. tensorflow==2.14.0 https://www.tensorflow.org/install/source?hl=ja#gpu
 3. keras==2.14.0
 4. opencv-python==4.9.0.80
-5. VSCode==1.87.0
+5. tf2onnx=1.16.1
+6. onnxsim==0.4.33
+7. sbi4onnx==1.0.5
+8. sor4onnx==1.0.5
+9. sne4onnx==1.0.11
+10. VSCode==1.87.0
 
 ---
 ---

@@ -3,3 +3,4 @@ data_design/
 *.h5
 *.tar.gz
 model_*/
+saved_model/
