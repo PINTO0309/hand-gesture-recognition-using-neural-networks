@@ -1,6 +1,10 @@
 data/
+data_org/
 data_design/
 *.h5
 *.tar.gz
 model_*/
 saved_model/
+saved_model_org/
+data_*/
+saved_model_*/
