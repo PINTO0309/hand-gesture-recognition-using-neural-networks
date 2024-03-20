@@ -1,5 +1,7 @@
 ## **This Fork (branch: `test`) is just to add a minor modification to make a 6 year old environment work on a recent new version of the framework.**
 
+https://github.com/PINTO0309/hand-gesture-recognition-using-neural-networks/assets/33194443/b74fc4cb-ea39-4f7f-8b73-1a086814b0a5
+
 1. CUDA 11.8
 2. tensorflow==2.14.0 https://www.tensorflow.org/install/source?hl=ja#gpu
 3. keras==2.14.0
