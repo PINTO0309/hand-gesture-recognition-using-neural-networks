@@ -15,7 +15,7 @@ https://github.com/PINTO0309/hand-gesture-recognition-using-neural-networks/asse
 11. sne4onnx==1.0.11
 12. VSCode==1.87.0
 
-![image](https://github.com/PINTO0309/hand-gesture-recognition-using-neural-networks/assets/33194443/91a0f239-036a-4205-9c4b-ca7398655a35)
+![image](https://github.com/PINTO0309/hand-gesture-recognition-using-neural-networks/assets/33194443/55f735ca-f02b-4741-8159-8916fe435e5a)
 
 ---
 ---
