@@ -1,6 +1,6 @@
 ## **This Fork (branch: `test`) is just to add a minor modification to make a 6 year old environment work on a recent new version of the framework.**
 
-- 3x8x32x32 CPU inference: 0.04ms
+- Nx3x8x32x32 (N,C,D,H,W) CPU inference: 0.04ms
 
   https://github.com/PINTO0309/hand-gesture-recognition-using-neural-networks/assets/33194443/b74fc4cb-ea39-4f7f-8b73-1a086814b0a5
 
